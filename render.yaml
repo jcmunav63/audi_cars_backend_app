@@ -1,22 +1,27 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: elephant
     plan: free
+    # ipAllowList: []
+    # databaseName: mysite
+    # user: mysite
+    # plan: free
 
 services:
   - type: web
-    name: mysite
+    name: rails # mysite
     runtime: ruby
     plan: free
     buildCommand: "./bin/render-build.sh"
     # preDeployCommand: "bundle exec rails db:migrate; bundle exec rails db:seed;"
     startCommand: "bundle exec rails server"
     envVars:
+      - key: RAILS_MASTER_KEY
+        sync: false
       - key: DATABSE_URL
         fromDatabase: 
-          name: mysite
+          name: postgres
           property: connectionString
       - key: RAILS_MASTER_KEY
-        sync:false- key: WEB_CONCURRENCY
+        sync:false
+      - key: WEB_CONCURRENCY
         value: 2
