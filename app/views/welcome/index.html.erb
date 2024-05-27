@@ -3,13 +3,24 @@
   Welcome to Audi Cars App - Backend site (on Render)
   </h1>
   <h3 style="font-size: 1.4rem; text-align: center;">A p p&nbsp;&nbsp;&nbsp;E n d p o i n t s</h3>
-  <br /><br />
   <ul style="margin-left: 140px;">
-    <li style="font-size: 1.3rem">Users List endpoint: 
+    <li style="font-size: 1.3rem">User List endpoint: 
       <a href="http://localhost:3000/api/v1/users">User List</a>
     </li>
+    <br />
+    <li style="font-size: 1.3rem">User Create endpoint: 
+      Use Postman with POST http://localhost:3000/api/v1/users
+    </li>
+    <br />
+    <li style="font-size: 1.3rem">User Update endpoint: 
+      Use Postman with POST (all columns) or PATCH (not all columns) http://localhost:3000/api/v1/users/id
+    </li>
+    <br />
+    <li style="font-size: 1.3rem">User Destroy endpoint: 
+      Use Postman with DELETE http://localhost:3000/api/v1/users/id
+    </li>
     <br /><br />
-    <li style="font-size: 1.3rem">Cars List for a specific user endpoint: 
+    <li style="font-size: 1.3rem">Car List for a specific user endpoint: 
       <a href="http://localhost:3000/api/v1/user1/cars">Cars List for User #n</a>
     </li>
   </ul>
