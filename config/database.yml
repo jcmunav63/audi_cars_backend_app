@@ -87,5 +87,5 @@ production:
   <<: *default
   url: <%= ENV["DATABASE_URL"] %>
   database: audi_cars_backend_production
-  username: newapp
-  password: <%= ENV["NEWAPP_DATABASE_PASSWORD"] %>
+  username: audi_cars_backend
+  password: <%= ENV["AUDI_CARS_BACKEND_DATABASE_PASSWORD"] %>
