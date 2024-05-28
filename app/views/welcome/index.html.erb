@@ -5,23 +5,27 @@
   <h3 style="font-size: 1.4rem; text-align: center;">A p p&nbsp;&nbsp;&nbsp;E n d p o i n t s</h3>
   <ul style="margin-left: 140px;">
     <li style="font-size: 1.3rem">User List endpoint: 
-      <a href="http://localhost:3000/api/v1/users">User List</a>
+      <a href="<%= Rails.configuration.base_url %>/api/v1/users">User List</a>
     </li>
     <br />
     <li style="font-size: 1.3rem">User Create endpoint: 
-      Use Postman with POST http://localhost:3000/api/v1/users
+      Use Postman with POST https://audi-cars-backend-app.onrender.com/api/v1/users
     </li>
     <br />
     <li style="font-size: 1.3rem">User Update endpoint: 
-      Use Postman with POST (all columns) or PATCH (not all columns) http://localhost:3000/api/v1/users/id
+      Use Postman with POST (all columns) or PATCH (not all columns) http://audi-cars-backend-app.onrender.com/api/v1/users/id
     </li>
     <br />
     <li style="font-size: 1.3rem">User Destroy endpoint: 
-      Use Postman with DELETE http://localhost:3000/api/v1/users/id
+      Use Postman with DELETE http://audi-cars-backend-app.onrender.com/api/v1/users/id
     </li>
     <br /><br />
-    <li style="font-size: 1.3rem">Car List for a specific user endpoint: 
-      <a href="http://localhost:3000/api/v1/user1/cars">Cars List for User #n</a>
+    <span style="font-size: 1.3rem">Cars endpoints for each specific car</span><br />
+    <li style="font-size: 1.3rem">
+      Cars List for User <a href="<%= Rails.configuration.base_url %>/api/v1/user1/cars">#1</a>
+    </li>
+    <li style="font-size: 1.3rem">
+      Cars List for User <a href="<%= Rails.configuration.base_url %>/api/v1/user2/cars">#2</a>
     </li>
   </ul>
 </div>
