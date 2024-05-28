@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "email": "leclerc@gmail.com",
+    "name": "Charles Leclerc",
+    "password": "me1234"
+  },
+  {
+    "id": 2,
+    "email": "verstappen@gmail.com",
+    "name": "Max Verstappen",
+    "password": "me1234"
+  },
+  {
+    "id": 3,
+    "email": "norris@gmail.com",
+    "name": "Lando Norris",
+    "password": "me1234"
+  }
+]
