@@ -1,6 +1,6 @@
 module Api
   module V1
-    class Api::V1::UsersController < ApplicationController
+    class UsersController < ApplicationController
       # Disable CSRF protection for API requests
       if respond_to?(:verify_authenticity_token)
         skip_before_action :verify_authenticity_token, only: %i[create update destroy]
